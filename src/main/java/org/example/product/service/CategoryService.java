@@ -1,2 +1,4 @@
-package org.example.product.service;public class CategoryService {
+package org.example.product.service;
+
+public class CategoryService {
 }
