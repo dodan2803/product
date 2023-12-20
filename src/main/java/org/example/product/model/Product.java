@@ -5,17 +5,20 @@ public class Product {
     private String name;
     private Double price;
     private int quantity;
-    public Product(int id, String name, Double price, int quantity) {
+    private Category category;
+
+    public Product(int id, String name, Double price, int quantity, Category category) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+        this.category = category;
     }
-
-    public Product(String name, Double price, int quantity) {
+    public Product(String name, Double price, int quantity, Category category) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+        this.category = category;
     }
 
     public int getId() {
@@ -48,5 +51,13 @@ public class Product {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
